@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100x Calculator</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+  <div class="container">
+
+    <div class="header">100x Calculator</div>
+
+    <div class="top">
+      <input type="number" id="a" step="0.01" placeholder="A">
+      <input type="number" id="b" step="0.01" placeholder="B">
+    </div>
+
+    <input type="number" id="min" placeholder="Min (e.g. 2000)">
+
+    <button onclick="calculate()" class="opt-btn">Calculate</button>
+
+    <div id="results" class="main"></div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
