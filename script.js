@@ -31,7 +31,7 @@ function calculate() {
   let best = null;
 
   // 🔥 find best initial values
-  for (let n1 = min; n1 <= min + 2000; n1++) {
+  for (let n1 = min; n1 <= min + 20000; n1++) {
     let r1 = A * n1;
     let n2 = Math.round(r1 / B);
 
@@ -125,7 +125,7 @@ function bind() {
     n1.value = value;
 
     // 🔥 expand slider dynamically
-    s1.max = Math.max(value * 2, min + 5000);
+    s1.max = Math.max(value * 2, min + 10000);
     s1.value = value;
 
     update(value, n2.value);
